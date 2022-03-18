@@ -1,8 +1,11 @@
+import Navbar from "./Components/Navbar";
+import BookContextProvider from "./Contexts/BookContext";
+
 function App() {
   return (
-    <div>
-      Hello
-    </div>
+    <BookContextProvider>
+      <Navbar />
+    </BookContextProvider>
   )
 }
 
