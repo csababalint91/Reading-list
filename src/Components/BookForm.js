@@ -1,0 +1,38 @@
+import { useContext, useState } from "react";
+import { BookContext } from "../Contexts/BookContext";
+
+const BookForm = () => {
+    const { addBook } = useContext(BookContext);
+    const [title, setTitle] = useState('');
+    const [author, setAuthor] = useState('');
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        addBook(title, author);
+        setTitle('');
+        setAuthor('');
+
+    }
+
+    return (
+        <form onSubmit={(e) => handleSubmit(e)}>
+            <input
+                type="text"
+                placeholder="book title"
+                value={title}
+                onChange={(e) => setTitle(e.target.value)}
+                required
+            />
+            <input
+                type="text"
+                placeholder="author"
+                value={author}
+                onChange={(e) => setAuthor(e.target.value)}
+                required
+            />
+            <input type="submit" val="submit" />
+        </form>
+    );
+}
+
+export default BookForm;
