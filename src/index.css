@@ -4,7 +4,7 @@ body {
 }
 
 .App {
-  backgroun: #4c2a4c;
+  background: #4c2a4c;
   margin: 20px auto;
   width: 90%;
   max-width: 700px;
@@ -15,6 +15,7 @@ body {
   padding: 10px 20px;
   text-align: center;
   background: #6d3d6d;
+  color: #fff;
 }
 
 .navbar h1 {
@@ -57,4 +58,26 @@ body {
 .empty {
   margin: 20px;
   text-align: center;
+}
+
+form {
+  padding: 20px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 6px 0;
+  background: #3c1f3c;
+  color: #fff;
+  border: 0;
+}
+
+input[type="submit"] {
+  margin: 10px auto;
+  background: #eee;
+  border: 0;
+  padding: 6px 20px;
+  display: block;
 }
