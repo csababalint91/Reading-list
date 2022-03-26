@@ -1,13 +1,14 @@
 body {
   margin: 0;
   background: #553055;
+  max-width: 1000px;
+  margin: auto;
 }
 
 .App {
   background: #4c2a4c;
   margin: 20px auto;
   width: 90%;
-  max-width: 700px;
   color: #eee;
 }
 
@@ -37,6 +38,7 @@ body {
   padding: 10px;
   cursor: pointer;
   margin: 10px 0;
+  line-height: 1.4;
 }
 
 .book-list li:hover {
@@ -47,17 +49,18 @@ body {
 .book-list .title {
   font-weight: bold;
   color: #fff;
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 
 .book-list .author {
-  font-size: 0.9em;
+  font-size: 1rem;
   color: #ddd;
 }
 
 .empty {
   margin: 20px;
   text-align: center;
+  color: #fff;
 }
 
 form {
@@ -72,6 +75,7 @@ input[type="text"] {
   background: #3c1f3c;
   color: #fff;
   border: 0;
+  font-size: 1rem;
 }
 
 input[type="submit"] {
